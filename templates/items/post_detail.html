@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content%}
+<div class="content">
+  <div class="row">
+    <div class="items col-md-6">
+      {%if object.post_image %}
+      <img src="{{object.post_image.url}}" alt="{{object.title}}">
+      {% endif %}
+    </div>
+    <div class="items col-md-6">
+      {{object.title}}
+      {{object.user_post}}
+      <h3>Description</h3>
+      {{object.description}}
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock content%}

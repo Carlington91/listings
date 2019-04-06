@@ -4,6 +4,10 @@ body{
   min-height: 100vh;
   font-size: 14px;
 }
+a, a:hover{
+  color: #333;
+  text-decoration: none;
+}
 main{
   flex: 1;
 }
@@ -30,4 +34,8 @@ main{
 }
 .page-header {
     padding: 2rem 0;
+}
+.item-img{
+  width: 255px;
+  height: 150px;
 }
